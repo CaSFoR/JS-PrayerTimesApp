@@ -12,14 +12,6 @@ A web application that displays prayer times for different locations using an ex
 - Displays the times in a user-friendly format
 - Supports multiple locations
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [API](#api)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
