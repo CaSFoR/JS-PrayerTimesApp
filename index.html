@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>مواقيت الصلاة</title>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- search bar and city name -->
+      <section class="container">
+        <div class="row">
+          <form class="col" id="search-form">
+            <select class="search-form" id="citySelect" onchange="chooseCity(this.value)" style="font-size: 16px;">
+            </select>
+          </form>
+          <h1
+            class="col d-flex justify-content-center align-items-center city-title"
+            id="searched-city"
+          >
+            مواقيت
+          </h1>
+        </div>
+      </section>
+
+      <!-- temp and day info -->
+      <section class="current-weather" style="direction: rtl;">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+         
+
+            <div class="col todays-info" id="myDiv" >
+            </div>
+
+          </div>
+          <div id="toDay" >
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <!--5 day forecast-->
+      <section class="container">
+        <div class="row week-forecast" style="direction: rtl;"  id="times">
+          <div class="col">
+            <h3>الفجر</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/partly-cloudy-day.png" /><br />
+            <span id="fajr"></span>
+          </div>
+          <div class="col">
+            <h3>الشروق</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/sun.png" /><br />
+            <span id="sunrise"></span>
+          </div>
+          <div class="col">
+            <h3>الظهر</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/sun.png" /><br />
+            <span id="dhuhr"></span>
+          </div>
+          <div class="col">
+            <h3>العصر</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/sun.png" /><br />
+            <span id="asr"></span>
+          </div>
+          <div class="col">
+            <h3>المغرب</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/partly-cloudy-day.png" /><br />
+            <span id="maghrib"></span>
+          </div>
+          <div class="col">
+            <h3>العشاء</h3>
+            <br /><img src="https://img.icons8.com/color-glass/42/000000/partly-cloudy-day.png" /><br />
+            <span id="isha"></span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+         coded by
+          <a href="https://github.com/CaSFoR" target="_blank">Waleed Alharbi</a
+          ><span>✌🏼</span>
+        </p>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+
+  </body>
+</html>
