@@ -27,3 +27,10 @@ To get a local copy up and running, follow these simple steps.
 ```bash
 git clone https://github.com/CaSFoR/JS-PrayerTimesApp.git
 cd JS-PrayerTimesApp
+
+
+### Install the dependencies
+
+```bash
+npm install
+
