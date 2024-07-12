@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/df73ac07-16f2-4119-8412-6fd12de8653d)# Prayer Times App
+![image](https://github.com/user-attachments/assets/df73ac07-16f2-4119-8412-6fd12de8653d)
+
+# Prayer Times App
 
 A web application that displays prayer times for different locations using an external API.
 
